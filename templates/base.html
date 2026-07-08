@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+{% block content %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>daily tracker</title>
+    </head>
+    <header>welcome to daily tracker app</header>
+    <hr>
+    <body>
+     <div class="home">
+        <a href="{% url  'main_page' %}">home</a>
+     </div>
+     <hr>
+     <div class="new_page">
+        <a href="{% url 'tracker_page' %}">add new goals</a>
+     </div>
+     <hr>
+     <div class="recents">
+        <a href="{% url 'trackers' %}">your recent goals</a>
+     </div>
+    </body>
+</html>
+{% endblock content %}
